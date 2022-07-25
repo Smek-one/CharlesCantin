@@ -1,0 +1,16 @@
+{
+    "forms":{
+        "my-form": {
+            "name" : "Contact me",
+            "actions": [{"type": "email", "to": "bertrandbovet@gmail.com"}],
+            "fields":{
+                "email":{
+                    "required": true
+                },
+                "message":{
+                    "required": true
+                }
+            }
+        }
+    }
+}

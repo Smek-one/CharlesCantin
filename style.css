@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+/*GENERAL*/
+
+        * {
+          box-sizing: border-box;
+        }
+
+/*INDEX PAGE*/
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FOOTER*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #355764;
+  color: #355764;
+  display: flex;
+  justify-content: center;
+  align-items: center;        
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title {
+  color: #395B64;
+  text-decoration: none;
+}
+
+.title {
+  margin: 2vh auto;
+  line-height: 1.15;
+  font-size: 3vw;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5vw;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #fefefe;
+  background: #395B64;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #E7F6F2;
+  border-color: #355764;
+  background-color: #395B64;
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+/*NAVBAR*/
+
+nav{
+  width: 100vw !important;
+}
+
+.navbar{
+  background-color: #395B64 !important;
+}
+
+.navbar-brand{
+  font-size: 2rem !important;
+  color: #A5C9CA !important;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus{
+  color: #E7F6F2 !important;
+}
+
+.nav-item .nav-link {          
+  color: #E7F6F2 !important;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus,
+.nav-item .nav-link:active{
+  color: #2C3333 !important;
+  text-decoration: none;
+}
+
+.navbar-nav{
+  margin: auto;
+}
+
+.btn{
+  color: #A5C9CA !important;
+  border: 1px solid #A5C9CA !important;
+}
+
+.navbar-toggler-icon{
+  color: #A5C9CA !important;
+}
+
+/*BACKGROUND IMAGE*/
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/*CONTACT FORM*/
+
+.contact-form{
+  width: 50vw;
+  background-color: #395B64;
+  color: #fefefe;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+       
+.input-txt{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.input-txt-area{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.btn-submit{
+  width: 20%;
+  display: block;
+  margin: auto;
+}
+
+
+      
+
+@media (max-width: 600px) {
+.grid {
+  width: 100%;
+  flex-direction: column;
+}
+ .title{
+  font-size: 6vw;
+}
+          
+}
+    
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
+}
+

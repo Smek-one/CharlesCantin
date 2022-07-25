@@ -32,7 +32,7 @@ export default function Home() {
           </a>
 
           <a href="#" className="card">
-            <h3>Tarifs et prestations &rarr;</h3>
+            <h3>Tarifs & prestations &rarr;</h3>
             <p>Découvrez mes prestations</p>
           </a>
         </div>
