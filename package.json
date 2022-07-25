@@ -1,13 +1,25 @@
 {
   "private": true,
+  "name": "charles-cantin",
+  "version": "0.1",
+  "author": "Bertrand Bovet",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "formspree": "formspree deploy",
     "start": "next start"
   },
   "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "@formspree/react": "^2.3.0",
+    "babel": "^6.23.0",
+    "bootstrap": "^5.2.0",
     "next": "latest",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.33.1"
+  },
+  "devDependencies": {
+    "@formspree/cli": "^0.9.6"
   }
 }
