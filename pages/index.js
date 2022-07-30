@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Logo from "../public/logo.svg";
 
@@ -37,7 +38,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer>Bertrand Bovet © 2022 Tous droits réservés</footer>
+      <Footer />
     </div>
   );
 }

@@ -55,7 +55,10 @@ function Navigation() {
               placeholder="Search"
               aria-label="Search"
             ></input>
-            <button className="btn btn-outline-success" type="submit">
+            <button
+              className="btn btn-outline-success search-btn"
+              type="submit"
+            >
               Search
             </button>
           </form>

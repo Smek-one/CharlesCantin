@@ -8,33 +8,39 @@ function ContactForm() {
   }
   return (
     <div className="container-fluid">
-      <h1>Contactez-moi</h1>
-      <p>
-        Une question? Un besoin? Remplissez le formulaiure et expliquez moi
-        votre projet
-      </p>
+      <h1 className="d-flex justify-content-center mt-5">Contactez-moi</h1>
 
       <form onSubmit={handleSubmit} className="contact-form">
-        <div class="mb-3">
-          <label class="form-label" for="name">
-            Nom
-          </label>
-          <input class="form-control" id="name" type="text" />
-        </div>
-        <label htmlFor="email">Email</label>
+        <p className="d-flex justify-content-center mt-5">
+          Une question? Un besoin? Remplissez le formulaire et expliquez moi
+          votre projet
+        </p>
+        <label htmlFor="email" className="d-flex justify-content-center">
+          Email
+        </label>
+        <ValidationError
+          prefix="Email"
+          field="email"
+          errors={state.errors}
+          className="error-msg"
+        />
         <input id="email" type="email" name="email" className="input-txt" />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <label for="message">Message</label>
-        <textarea id="message" name="message" className="input-txt-area" />
+
+        <label for="message" className="d-flex justify-content-center">
+          Message
+        </label>
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
+          className="error-msg"
         />
+        <textarea id="message" name="message" className="input-txt-area" />
+
         <button
           type="submit"
           disabled={state.submitting}
-          className="btn btn-submit"
+          className="btn btn-submit d-flex justify-content-center"
         >
           Envoyer
         </button>

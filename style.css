@@ -8,7 +8,7 @@
 
 /*INDEX PAGE*/
 .container {
-  min-height: 100vh;
+  max-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,8 @@ main {
 /*FOOTER*/
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 100px;
   border-top: 1px solid #355764;
@@ -143,7 +145,7 @@ nav{
   margin: auto;
 }
 
-.btn{
+.search-btn{
   color: #A5C9CA !important;
   border: 1px solid #A5C9CA !important;
 }
@@ -163,13 +165,22 @@ nav{
 
 /*CONTACT FORM*/
 
+.container-fluid{
+  max-height: 100%;
+}
+
 .contact-form{
   width: 50vw;
+  
   background-color: #395B64;
   color: #fefefe;
   padding: 20px;
   margin: 20px auto;
   border-radius: 10px;
+}
+
+.contact-bloc{
+  height: 30vh;
 }
        
 .input-txt{
@@ -196,9 +207,26 @@ nav{
   width: 20%;
   display: block;
   margin: auto;
+  color: #A5C9CA !important;
+  border: 1px solid #A5C9CA !important;
 }
 
+.btn-submit:hover,
+.btn-submit:focus,
+.btn-submit:active{
+  background: #A5C9CA !important;
+  color: #395B64 !important;
+}
 
+.error-msg{
+  font-weight: 200;
+  color: red;
+}
+
+.thk-txt{
+  text-align: center;
+  margin: 2vh auto;
+}
       
 
 @media (max-width: 600px) {
