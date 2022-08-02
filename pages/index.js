@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import Logo from "../public/logo.svg";
+import Image from "next/image";
+import Background from "../public/background.jpg";
 
 export default function Home() {
   return (
@@ -12,32 +12,19 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
 
-      <Navigation />
+      <div className="main-block">
+        <Navigation />
+        <div className="d-flex me-auto flex-wrap align-items-center justify-content-center title-block">
+          <h3 className="justify-content-center title">
+            Charles Cantin - Photographe
+          </h3>
 
-      <main>
-        <h3 className="title">Charles Cantin - Photographe</h3>
-
-        <p className="description">Photographe évenementiel</p>
-
-        <Image src={Logo} alt="logo" width={200} height={200} />
-
-        <div className="grid">
-          <a href="#" className="card">
-            <h3>Galerie &rarr;</h3>
-            <p>Toutes mes photos</p>
-          </a>
-
-          <a href="/contact" className="card">
-            <h3>Contact &rarr;</h3>
-            <p>Contactez-moi</p>
-          </a>
-
-          <a href="#" className="card">
-            <h3>Tarifs & prestations &rarr;</h3>
-            <p>Découvrez mes prestations</p>
-          </a>
+          <p className="align-items-center  description">
+            Photographe évenementiel
+          </p>
         </div>
-      </main>
+      </div>
+
       <Footer />
     </div>
   );

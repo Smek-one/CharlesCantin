@@ -4,14 +4,22 @@ import { useForm, ValidationError } from "@formspree/react";
 function ContactForm() {
   const [state, handleSubmit] = useForm("my-form");
   if (state.succeeded) {
-    return <h3>Thanks !</h3>;
+    return (
+      <h3 className="thk-txt">
+        Merci pour votre message. Retour à la page{" "}
+        <a href="/" className="back-link">
+          <span>d'accueil</span>
+        </a>
+        .
+      </h3>
+    );
   }
   return (
-    <div className="container-fluid">
-      <h1 className="d-flex justify-content-center mt-5">Contactez-moi</h1>
+    <div className="container-fluid  ">
+      <h1 className="d-flex justify-content-center mt-auto">Contactez-moi</h1>
 
       <form onSubmit={handleSubmit} className="contact-form">
-        <p className="d-flex justify-content-center mt-5">
+        <p className="d-flex justify-content-center mt-auto">
           Une question? Un besoin? Remplissez le formulaire et expliquez moi
           votre projet
         </p>
@@ -40,7 +48,7 @@ function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="btn btn-submit d-flex justify-content-center"
+          className="btn btn-submit d-flex justify-content-center w-auto"
         >
           Envoyer
         </button>
