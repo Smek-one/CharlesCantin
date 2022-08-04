@@ -15,12 +15,14 @@ function ContactForm() {
     );
   }
   return (
-    <div className="container-fluid  ">
-      <h1 className="d-flex justify-content-center mt-auto">Contactez-moi</h1>
+    <div className="container-fluid">
+      <h1 className="d-flex justify-content-center mt-auto page-title">
+        Contactez-moi
+      </h1>
 
       <form onSubmit={handleSubmit} className="contact-form">
         <p className="d-flex justify-content-center mt-auto">
-          Une question? Un besoin? Remplissez le formulaire et expliquez moi
+          Une question? Un besoin? Remplissez le formulaire et expliquez-moi
           votre projet
         </p>
         <label htmlFor="email" className="d-flex justify-content-center">
