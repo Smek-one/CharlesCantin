@@ -1,9 +1,10 @@
 backend:
-  media_folder: 'images/uploads'
   name: git-gateway
   branch: main
-  publish_mode: editorial_workflow
   
+
+publish_mode: "editorial_workflow"
+media_folder: 'images/uploads'
 
 
 collections:
