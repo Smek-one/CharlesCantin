@@ -37,14 +37,14 @@
   text-align: center;
   border-radius: 15px;
   padding: 3vh 1vw;
-  text-shadow: 1px 1px #fff;
+  text-shadow: 1px 1px #EDFE00;
 }
 
 .description{
    border-radius: 15px;
   color: #47555e;
   padding: 3vh 1vw;
-  text-shadow: 1px 1px #eee;
+  text-shadow: 1px 1px #EDFE00;
   line-height: 1.5;
   font-size: 1.5vw;
 }
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #FFC200;
   
 }
 
@@ -69,13 +69,14 @@
 
 nav{
   width: 100vw !important;
+  background-color: #FFC200;
 }
-
 
 .nav-item .nav-link {          
   color: #47555e !important;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .nav-item .nav-link:hover,
@@ -106,6 +107,20 @@ nav{
 
 
 /*CONTACT FORM*/
+
+#name, #firstName, #email{
+  width: 50vw;
+  height: 4vh;
+  display: block;
+  margin: 1vh auto;
+}
+
+#message{
+  height: 20vh;
+  width: 80%;
+  display: block;
+  margin: 1vh auto;
+}
 
 .contact-form{
   width: 70%;
@@ -143,7 +158,7 @@ nav{
 .btn-submit{
   width: 20%;
   display: block;
-  margin: auto;
+  margin: 2vh auto;
   color: #eeeeee!important;
   border: 1px solid #eeeeee !important;
   

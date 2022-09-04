@@ -25,6 +25,34 @@ function ContactForm() {
           Une question? Un besoin? Remplissez le formulaire et expliquez-moi
           votre projet
         </p>
+
+        <label htmlFor="name" className="d-flex justify-content-center">
+          Nom
+        </label>
+        <ValidationError
+          prefix="Nom"
+          field="name"
+          errors={state.errors}
+          className="error-msg"
+        />
+        <input id="name" type="text" name="name" className="input-txt" />
+
+        <label htmlFor="firstName" className="d-flex justify-content-center">
+          Prénom
+        </label>
+        <ValidationError
+          prefix="Prenom"
+          field="firstName"
+          errors={state.errors}
+          className="error-msg"
+        />
+        <input
+          id="firstName"
+          type="text"
+          name="firstName"
+          className="input-txt"
+        />
+
         <label htmlFor="email" className="d-flex justify-content-center">
           Email
         </label>

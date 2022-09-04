@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Navigation() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <a className="navbar-brand" href="/">
           <Image
@@ -52,17 +52,6 @@ function Navigation() {
               </a>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            ></input>
-            <button className="btn search-btn" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
