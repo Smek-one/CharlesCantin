@@ -2,12 +2,14 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import Image from "next/image";
-import Background from "../public/background.jpg";
+import Background from "../public/bg.jpeg";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
         <title>Charles Cantin - Photographe</title>
         <link rel="icon" href="/logo.svg" />
       </Head>
