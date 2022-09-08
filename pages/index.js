@@ -20,10 +20,6 @@ export default function Home() {
           <h3 className="justify-content-center title">
             Charles Cantin - Photographe
           </h3>
-
-          <p className="align-items-center  description">
-            Photographe évenementiel
-          </p>
         </div>
       </div>
       <Footer />

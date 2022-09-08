@@ -37,14 +37,14 @@
   text-align: center;
   border-radius: 15px;
   padding: 3vh 1vw;
-  text-shadow: 1px 1px #EDFE00;
+  text-shadow: 1px 1px #C9FEF8;
 }
 
 .description{
    border-radius: 15px;
   color: #47555e;
   padding: 3vh 1vw;
-  text-shadow: 1px 1px #EDFE00;
+  text-shadow: 1px 1px #C9FEF8;
   line-height: 1.5;
   font-size: 1.5vw;
 }
@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFC200;
+  background-color: #C9FEF8;
   
 }
 
@@ -69,7 +69,7 @@
 
 nav{
   width: 100vw !important;
-  background-color: #FFC200;
+  background-color: #C9FEF8;
 }
 
 .nav-item .nav-link {          
