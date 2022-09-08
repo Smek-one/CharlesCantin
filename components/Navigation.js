@@ -35,7 +35,7 @@ function Navigation() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="_posts/blog">
+              <a className="nav-link" aria-current="page" href="#">
                 Galeries
               </a>
             </li>
