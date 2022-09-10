@@ -242,4 +242,13 @@ body {
 
 .page-title{
   margin-top: 2vh;
+  color: #C9FEF8;
+  text-shadow: 1px 2px #47555e;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*GALERY*/
+
+.galery-list{
+  list-decoration: none;
 }

@@ -4,18 +4,17 @@
   "version": "0.1",
   "author": "Bertrand Bovet",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "formspree": "formspree deploy",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
     "@formspree/react": "^2.3.0",
     "babel": "^6.23.0",
     "bootstrap": "^5.2.0",
-    "contentful": "^9.1.34",
-    "gray-matter": "^4.0.3",
     "netlify-cms-app": "^2.15.72",
     "next": "latest",
     "react": "17.0.2",
@@ -24,6 +23,9 @@
     "react-markdown": "^6.0.3"
   },
   "devDependencies": {
-    "@formspree/cli": "^0.9.6"
+    "@babel/core": "^7.19.0",
+    "@babel/preset-react": "^7.18.6",
+    "@formspree/cli": "^0.9.6",
+    "frontmatter-markdown-loader": "^3.7.0"
   }
 }
